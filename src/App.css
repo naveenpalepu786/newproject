@@ -1,0 +1,330 @@
+/* ================== GLOBAL STYLES ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+  background: #f3f6f8;
+  scroll-behavior: smooth;
+  color: #333;
+}
+
+/* ================== NAVBAR ================== */
+.navbar {
+  background: linear-gradient(135deg, #0a66c2 0%, #0952a3 100%) !important;
+  padding: 12px 30px !important;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px;
+  color: white !important;
+  font-family: Georgia, serif;
+}
+
+.navbar-brand:hover {
+  color: #b0d4ff !important;
+  transform: scale(1.05);
+}
+
+.nav-link {
+  color: white !important;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  font-size: 15px;
+}
+
+.nav-link:hover {
+  color: #b0d4ff !important;
+  transform: translateY(-2px);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #b0d4ff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ================== HERO SECTION ================== */
+.hero-section {
+  background: linear-gradient(135deg, #0a66c2 0%, #0952a3 100%);
+  padding: 80px 20px;
+  border-radius: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-weight: 800;
+  font-size: 48px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+.hero-section .lead {
+  font-size: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.hero-btn {
+  transition: all 0.3s ease !important;
+  font-weight: 600;
+  margin-top: 20px;
+  background: white !important;
+  color: #0a66c2 !important;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
+  background: #f3f6f8 !important;
+}
+
+/* ================== CATEGORY CARDS ================== */
+.cat-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #dce6f1;
+  height: 100%;
+  background: white;
+}
+
+.cat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(10, 102, 194, 0.15) !important;
+  border-color: #0a66c2;
+}
+
+.cat-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cat-card:hover .cat-img {
+  transform: scale(1.1);
+}
+
+.cat-card h4 {
+  color: #0a66c2;
+  font-weight: 700;
+}
+
+.cat-card p {
+  color: #65676b;
+}
+
+/* ================== SECTION TITLE ================== */
+.section-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #0a66c2;
+  text-shadow: none;
+  margin-bottom: 30px;
+}
+
+/* ================== BUTTONS ================== */
+.btn {
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #0a66c2 0%, #0952a3 100%);
+  color: white !important;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(10, 102, 194, 0.4);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #17a2b8 0%, #20c997 100%);
+  color: white !important;
+}
+
+.btn-success:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(23, 162, 184, 0.4);
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white !important;
+}
+
+.btn-danger:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(231, 76, 60, 0.4);
+}
+
+.btn-warning {
+  background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+  color: white !important;
+}
+
+.btn-warning:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(243, 156, 18, 0.4);
+}
+
+/* ================== CARDS ================== */
+.card {
+  border: 1px solid #dce6f1;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background: white;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(10, 102, 194, 0.15) !important;
+  border-color: #0a66c2;
+}
+
+/* ================== INPUTS ================== */
+.form-control,
+.form-select {
+  border-radius: 6px;
+  border: 1px solid #dce6f1;
+  padding: 12px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  background: white;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #0a66c2;
+  box-shadow: 0 0 0 0.2rem rgba(10, 102, 194, 0.15) !important;
+}
+
+/* ================== FOOTER ================== */
+footer {
+  background: linear-gradient(135deg, #0a66c2 0%, #0952a3 100%);
+  margin-top: 50px;
+  padding: 30px 0;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+/* ================== PAGE CONTENT ================== */
+.page {
+  padding: 40px 20px;
+  font-size: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 70px);
+  background: #f3f6f8;
+}
+
+/* ================== ANIMATIONS ================== */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* ================== BADGE ================== */
+.badge {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #0a66c2 !important;
+}
+
+/* ================== UTILITY CLASSES ================== */
+.text-gradient {
+  background: linear-gradient(135deg, #0a66c2 0%, #0952a3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.bg-light {
+  background: #f3f6f8 !important;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px !important;
+  }
+
+  .nav-link {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .hero-section h1 {
+    font-size: 32px;
+  }
+
+  .hero-section .lead {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .card {
+    margin-bottom: 15px;
+  }
+}
+
+

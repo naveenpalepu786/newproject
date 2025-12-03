@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Paneer Butter Masala",
+    "img": "https://images.pexels.com/photos/9609838/pexels-photo-9609838.jpeg",
+    "desc": "Soft paneer cubes cooked in a rich buttery tomato gravy.",
+    "price": 180,
+    "rating": 4.4,
+    "time": "30 mins",
+    "category": "veg"
+  },
+  {
+    "id": 2,
+    "name": "Veg Biryani",
+    "img": "https://media.istockphoto.com/id/2159877557/photo/mix-vegetable-pulao-veg-biryani.jpg?b=1&s=612x612&w=0&k=20&c=gBfsYxRJTsEwhSwM2UXN_CFGPPwVag2xfyukVmc98DU=",
+    "desc": "Aromatic basmati rice cooked with mixed vegetables.",
+    "price": 150,
+    "rating": 4.2,
+    "time": "25 mins",
+    "category": "veg"
+  },
+  {
+    "id": 3,
+    "name": "Masala Dosa",
+    "img": "https://images.pexels.com/photos/12392915/pexels-photo-12392915.jpeg",
+    "desc": "Crispy dosa filled with spiced mashed potatoes.",
+    "price": 120,
+    "rating": 4.5,
+    "time": "20 mins",
+    "category": "veg"
+  },
+  {
+    "id": 4,
+    "name": "Chole Bhature",
+    "img": "https://images.pexels.com/photos/9609850/pexels-photo-9609850.jpeg",
+    "desc": "North Indian dish of spicy chickpeas served with fluffy bhature.",
+    "price": 140,
+    "rating": 4.6,
+    "time": "22 mins",
+    "category": "veg"
+  },
+  {
+    "id": 5,
+    "name": "Veg Fried Rice",
+    "img": "https://media.istockphoto.com/id/1292617507/photo/tasty-veg-schezwan-fried-rice-served-in-bowl-over-a-rustic-wooden-background-indian-cuisine.jpg?b=1&s=612x612&w=0&k=20&c=Hp7HKeDw9hl4r48EYSkdl_NbycQZc7gpQbFRUN2xKD4=",
+    "desc": "Rice tossed with veggies, soy sauce & spices.",
+    "price": 130,
+    "rating": 4.1,
+    "time": "18 mins",
+    "category": "veg"
+  },
+  {
+    "id": 6,
+    "name": "Paneer Tikka",
+    "img": "https://media.istockphoto.com/id/1267019739/photo/close-look-at-delicious-and-freshly-cooked-paneer-tikka-grilled-with-onions-and-bell-pepper.jpg?b=1&s=612x612&w=0&k=20&c=VruyRMZgSgW9GruHEwRYI9N8rBfBMrhOcJgUV7z7rvQ=",
+    "desc": "Grilled paneer cubes marinated in Indian spices.",
+    "price": 200,
+    "rating": 4.7,
+    "time": "28 mins",
+    "category": "veg"
+  },
+  {
+    "id": 7,
+    "name": "Aloo Paratha",
+    "img": "https://images.pexels.com/photos/5949891/pexels-photo-5949891.jpeg",
+    "desc": "Stuffed paratha filled with spiced potatoes.",
+    "price": 80,
+    "rating": 4.3,
+    "time": "15 mins",
+    "category": "veg"
+  },
+  {
+    "id": 8,
+    "name": "Idli Sambar",
+    "img": "https://media.istockphoto.com/id/182491284/photo/idli-sambhar-and-chutney-south-indian-dish-on-banana-leaf.jpg?b=1&s=612x612&w=0&k=20&c=HWvo65ciae9Fq1zXYayqcnKyqrKYFDUOI_aAMwhcH8Y=",
+    "desc": "Soft idlis served with hot sambar & chutney.",
+    "price": 90,
+    "rating": 4.5,
+    "time": "18 mins",
+    "category": "veg"
+  },
+  {
+    "id": 9,
+    "name": "Gobi Manchurian",
+    "img": "https://media.istockphoto.com/id/1334115358/photo/cabbage-manchurian.jpg?b=1&s=612x612&w=0&k=20&c=ALKRaDctlRJRMtV0kdLUPS6s21MP-81qJcgUMjrBuGE=",
+    "desc": "Crispy cauliflower tossed in Indo-Chinese sauce.",
+    "price": 110,
+    "rating": 4.2,
+    "time": "20 mins",
+    "category": "veg"
+  },
+  {
+    "id": 10,
+    "name": "Dal Tadka",
+    "img": "https://images.pexels.com/photos/9609858/pexels-photo-9609858.jpeg",
+    "desc": "Yellow dal cooked with desi ghee & spices.",
+    "price": 100,
+    "rating": 4.6,
+    "time": "25 mins",
+    "category": "veg"
+  }
+]

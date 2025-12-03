@@ -1,0 +1,102 @@
+[
+  {
+    "id": 101,
+    "name": "Chicken Biryani",
+    "img": "https://media.istockphoto.com/id/1126069131/photo/chicken-biryani.jpg?b=1&s=612x612&w=0&k=20&c=YPwLxIJmNmXZJXCZiUh_EgVJXxYJLjNW-FmT6xK5LgY=",
+    "desc": "Fragrant basmati rice cooked with tender chicken pieces.",
+    "price": 250,
+    "rating": 4.7,
+    "time": "35 mins",
+    "category": "nonveg"
+  },
+  {
+    "id": 102,
+    "name": "Tandoori Chicken",
+    "img": "https://media.istockphoto.com/id/1146816697/photo/tandoori-chicken-served-on-plate.jpg?b=1&s=612x612&w=0&k=20&c=GRPWWvvyO7lEY05p_6TyLjVA5QXZ3l_Iyz1g9SjXWXk=",
+    "desc": "Marinated chicken cooked in tandoor with aromatic spices.",
+    "price": 280,
+    "rating": 4.8,
+    "time": "40 mins",
+    "category": "nonveg"
+  },
+  {
+    "id": 103,
+    "name": "Fish Curry",
+    "img": "https://media.istockphoto.com/id/1295648108/photo/delicious-bengali-fish-curry-with-potatoes.jpg?b=1&s=612x612&w=0&k=20&c=L2uMeVsIZD9NnFV3Yfkw6YNJCo7vG0lNWFbmBjKr40w=",
+    "desc": "Tender fish cooked in aromatic coconut curry sauce.",
+    "price": 220,
+    "rating": 4.6,
+    "time": "30 mins",
+    "category": "nonveg"
+  },
+  {
+    "id": 104,
+    "name": "Butter Chicken",
+    "img": "https://media.istockphoto.com/id/1282164159/photo/butter-chicken-served-with-rice-and-naan-white-background.jpg?b=1&s=612x612&w=0&k=20&c=lHKkPDXLlTpJ-X_YJXXz0kQVoC6Y50J-9WIjVgVvZ5s=",
+    "desc": "Succulent chicken pieces in creamy tomato butter sauce.",
+    "price": 240,
+    "rating": 4.9,
+    "time": "32 mins",
+    "category": "nonveg"
+  },
+  {
+    "id": 105,
+    "name": "Mutton Curry",
+    "img": "https://media.istockphoto.com/id/1170825156/photo/indian-mutton-curry-or-goat-meat-curry-also-known-as-khade-masale-ka-mutton-karahi.jpg?b=1&s=612x612&w=0&k=20&c=F0nK8NW2t9E9LPJzL8EVqk7fHqTz9GFN0fOmKrxYC_Q=",
+    "desc": "Slow-cooked mutton in rich aromatic spices.",
+    "price": 300,
+    "rating": 4.7,
+    "time": "45 mins",
+    "category": "nonveg"
+  },
+  {
+    "id": 106,
+    "name": "Chicken 65",
+    "img": "https://media.istockphoto.com/id/1324929299/photo/fried-chicken-wings-coated-with-sesame-seeds-on-white-background-crispy-appetizer-spicy-hot.jpg?b=1&s=612x612&w=0&k=20&c=mUZ8Z1aIH9kzV_xRmvQYzCRLDZ0r55j60p2dP0rvjMg=",
+    "desc": "Crispy and spicy deep-fried chicken pieces.",
+    "price": 180,
+    "rating": 4.5,
+    "time": "22 mins",
+    "category": "nonveg"
+  },
+  {
+    "id": 107,
+    "name": "Prawn Masala",
+    "img": "https://media.istockphoto.com/id/1349826701/photo/shrimp-masala-spicy-shrimp-fry-in-a-skillet.jpg?b=1&s=612x612&w=0&k=20&c=3nj_nV8Vh1mYzVYkzr8VZ5fz7j7PFxKt6mXtGJoGJLM=",
+    "desc": "Succulent prawns cooked in spicy masala sauce.",
+    "price": 320,
+    "rating": 4.8,
+    "time": "28 mins",
+    "category": "nonveg"
+  },
+  {
+    "id": 108,
+    "name": "Chicken Tikka Masala",
+    "img": "https://media.istockphoto.com/id/1288577783/photo/tikka-masala-with-rice.jpg?b=1&s=612x612&w=0&k=20&c=hkPoXpBz6q6gfhPjBQVdrmwE1M2pjT1VYXzLNTX1Ems=",
+    "desc": "Tender chicken tikka pieces in creamy tomato sauce.",
+    "price": 260,
+    "rating": 4.9,
+    "time": "35 mins",
+    "category": "nonveg"
+  },
+  {
+    "id": 109,
+    "name": "Egg Biryani",
+    "img": "https://media.istockphoto.com/id/1253916703/photo/egg-biryani.jpg?b=1&s=612x612&w=0&k=20&c=rZMXpqp2ZEPvb-H6Q0xHFfPCYKZtOW8NxvCk7wjH91E=",
+    "desc": "Basmati rice with boiled eggs and aromatic spices.",
+    "price": 160,
+    "rating": 4.4,
+    "time": "28 mins",
+    "category": "nonveg"
+  },
+  {
+    "id": 110,
+    "name": "Seekh Kebab",
+    "img": "https://media.istockphoto.com/id/1341530316/photo/top-view-of-almond-milk-shake-on-wooden-table-with-almonds-in-background.jpg?b=1&s=612x612&w=0&k=20&c=LenNukbz7NEaphvgvBQoNlH4qN5Gue5okhFYSl0ZxwI=",
+    "desc": "Spiced minced meat grilled on skewers.",
+    "price": 200,
+    "rating": 4.6,
+    "time": "25 mins",
+    "category": "nonveg"
+  }
+]

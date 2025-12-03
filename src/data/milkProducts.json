@@ -1,0 +1,152 @@
+[
+  {
+    "id": 201,
+    "name": "Full Cream Milk",
+    "img": "https://images.pexels.com/photos/5060283/pexels-photo-5060283.jpeg",
+    "desc": "Rich & thick full cream milk, perfect for desserts & tea.",
+    "price": 65,
+    "rating": 4.5,
+    "time": "Daily Fresh",
+    "category": "milk"
+  },
+  {
+    "id": 202,
+    "name": "Toned Milk",
+    "img": "https://images.pexels.com/photos/5028859/pexels-photo-5028859.jpeg",
+    "desc": "Healthy toned milk with balanced nutrients.",
+    "price": 55,
+    "rating": 4.4,
+    "time": "Daily Fresh",
+    "category": "milk"
+  },
+  {
+    "id": 203,
+    "name": "Cow Milk",
+    "img": "https://media.istockphoto.com/id/1297005860/photo/raw-milk-being-poured-into-container.jpg?b=1&s=612x612&w=0&k=20&c=WFGK0Zvy5CMce1TvN9NxBfhlb-IONcY3IeYTqyYv3yc=",
+    "desc": "Pure, natural cow milk with essential vitamins.",
+    "price": 70,
+    "rating": 4.6,
+    "time": "Daily Fresh",
+    "category": "milk"
+  },
+  {
+    "id": 204,
+    "name": "Buffalo Milk",
+    "img": "https://images.pexels.com/photos/248412/pexels-photo-248412.jpeg",
+    "desc": "High-fat buffalo milk ideal for curd & paneer.",
+    "price": 75,
+    "rating": 4.3,
+    "time": "Fresh",
+    "category": "milk"
+  },
+  {
+    "id": 205,
+    "name": "Organic Farm Milk",
+    "img": "https://media.istockphoto.com/id/1003977092/photo/production-of-yogurt-in-a-farm-homemade-cows-milk-yoghurt.jpg?b=1&s=612x612&w=0&k=20&c=YclcPV73g5CtmwK3j1UNIWs1yhXQoSy8PQ_wUFntoP4=",
+    "desc": "100% organic farm milk free from preservatives.",
+    "price": 90,
+    "rating": 4.7,
+    "time": "Farm Fresh",
+    "category": "milk"
+  },
+  {
+    "id": 206,
+    "name": "Flavoured Milk – Badam",
+    "img": "https://media.istockphoto.com/id/1341530316/photo/top-view-of-almond-milk-shake-on-wooden-table-with-almonds-in-background.jpg?b=1&s=612x612&w=0&k=20&c=LenNukbz7NEaphvgvBQoNlH4qN5Gue5okhFYSl0ZxwI=",
+    "desc": "Delicious almond-flavoured milk drink.",
+    "price": 45,
+    "rating": 4.4,
+    "time": "Ready to Drink",
+    "category": "milk"
+  },
+  {
+    "id": 207,
+    "name": "Flavoured Milk – Chocolate",
+    "img": "https://media.istockphoto.com/id/1286560340/photo/chocolate-milk-shake-milkshake-glass-bottle-straw-isolated-on-white.jpg?b=1&s=612x612&w=0&k=20&c=YnbLGhDw_6MvP16LFC9NZD3uqfvvyg6bXQOnG9roT1k=",
+    "desc": "Sweet chocolate milk for kids & adults.",
+    "price": 50,
+    "rating": 4.6,
+    "time": "Ready to Drink",
+    "category": "milk"
+  },
+  {
+    "id": 208,
+    "name": "Curd (Dahi)",
+    "img": "https://images.pexels.com/photos/7965898/pexels-photo-7965898.jpeg",
+    "desc": "Thick homemade curd packed with probiotics.",
+    "price": 40,
+    "rating": 4.5,
+    "time": "Fresh",
+    "category": "milk"
+  },
+  {
+    "id": 209,
+    "name": "Paneer",
+    "img": "https://images.pexels.com/photos/3928854/pexels-photo-3928854.png",
+    "desc": "Soft & fresh paneer made from pure milk.",
+    "price": 220,
+    "rating": 4.8,
+    "time": "Fresh",
+    "category": "milk"
+  },
+  {
+    "id": 210,
+    "name": "Ghee",
+    "img": "https://images.pexels.com/photos/7965898/pexels-photo-7965898.jpeg",
+    "desc": "Traditional pure cow ghee with rich aroma.",
+    "price": 450,
+    "rating": 4.9,
+    "time": "Premium",
+    "category": "milk"
+  },
+  {
+    "id": 211,
+    "name": "Butter",
+    "img": "https://images.pexels.com/photos/5949890/pexels-photo-5949890.jpeg",
+    "desc": "Creamy butter perfect for cooking & breakfast.",
+    "price": 110,
+    "rating": 4.6,
+    "time": "Fresh",
+    "category": "milk"
+  },
+  {
+    "id": 212,
+    "name": "Cheese Slices",
+    "img": "https://images.pexels.com/photos/27569474/pexels-photo-27569474.jpeg",
+    "desc": "Soft cheese slices ideal for sandwiches.",
+    "price": 95,
+    "rating": 4.4,
+    "time": "Packed",
+    "category": "milk"
+  },
+  {
+    "id": 213,
+    "name": "Milk Powder",
+    "img": "https://images.pexels.com/photos/11501481/pexels-photo-11501481.jpeg",
+    "desc": "Instant milk powder for daily use.",
+    "price": 180,
+    "rating": 4.3,
+    "time": "Packed",
+    "category": "milk"
+  },
+  {
+    "id": 214,
+    "name": "Fresh Lassi",
+    "img": "https://media.istockphoto.com/id/2214087109/photo/lassi-in-clay-cup-topped-with-dry-fruits.jpg?b=1&s=612x612&w=0&k=20&c=5RE7AY226iOLxqh5PCZNbLgVVZpu02lPBNDcRSzcQ3k=",
+    "desc": "Refreshing sweet lassi made with fresh curd.",
+    "price": 35,
+    "rating": 4.7,
+    "time": "Fresh",
+    "category": "milk"
+  },
+  {
+    "id": 215,
+    "name": "Fresh Butter Milk",
+    "img": "https://media.istockphoto.com/id/1147734167/photo/spiced-buttermilk-indian-traditional-summer-drink.jpg?b=1&s=612x612&w=0&k=20&c=MKszeknUHlJade6ZAiOAIwzFokrNDYGKnZUn9Su5Tzc=",
+    "desc": "Healthy buttermilk perfect for digestion.",
+    "price": 30,
+    "rating": 4.5,
+    "time": "Fresh",
+    "category": "milk"
+  }
+]

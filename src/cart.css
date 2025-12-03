@@ -1,0 +1,202 @@
+.cart-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+  padding: 30px;
+  border-radius: 20px;
+  min-height: 100vh;
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #ff5e00;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px #aaa;
+}
+
+.cart-card {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.cart-card:hover {
+  transform: scale(1.03);
+}
+
+.cart-img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.cart-img img:hover {
+  transform: scale(1.08);
+}
+
+.cart-info h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.price {
+  color: #ff3d00;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.qty-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.qty-box button {
+  background: #ff6a00;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.qty-box button:hover {
+  background: #ff944d;
+}
+
+.qty-box span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.remove-btn {
+  background: #ff1e1e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove-btn:hover {
+  background: #ff3b3b;
+}
+
+/* ----------------- DISCOUNT SECTION ----------------- */
+.discount-box {
+  background: #fff4e0;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 25px 0;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.discount-box h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #ff7700;
+  font-weight: 700;
+}
+
+.discount-buttons button {
+  background: #ff7700;
+  color: white;
+  border: none;
+  margin: 5px;
+  padding: 10px 22px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.discount-buttons button:hover {
+  background: #d66921;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.custom-discount {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.custom-discount label {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.custom-discount input {
+  width: 70px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.custom-discount input:focus {
+  outline: none;
+  border-color: #ff7700;
+  box-shadow: 0 0 10px rgba(255,119,0,0.5);
+}
+
+/* ----------------- TOTAL BOX ----------------- */
+.total-box {
+  background: #fff4e0;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 25px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+
+.checkout-btn {
+  background: #ff7700;
+  color: white;
+  border: none;
+  padding: 14px 25px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.checkout-btn:hover {
+  background: #ff944d;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.empty-text {
+  text-align: center;
+  font-size: 26px;
+  color: gray;
+  margin-top: 50px;
+}
