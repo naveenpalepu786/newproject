@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { clearCart } from "../cartSlice";
 import "bootstrap/dist/css/bootstrap.min.css";
+import emailjs from "emailjs-com";
+import QRCode from "qrcode";
 
 function Checkout() {
   const navigate = useNavigate();
@@ -29,7 +31,7 @@ function Checkout() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handlePlaceOrder = () => {
+  const handlePlaceOrder = async () => {
     if (!formData.fullName || !formData.email || !formData.phone || !formData.address) {
       alert("Please fill all required fields!");
       return;
@@ -41,33 +43,85 @@ function Checkout() {
 
     // Save to localStorage for order history
     const orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push({
+    const orderObj = {
       id: newOrderId,
-      date: new Date().toLocaleDateString(),
+      date: new Date().toLocaleString(),
       items: cartItems,
       total: totalPrice,
       status: "Confirmed",
       customer: formData,
-    });
+    };
+
+    orders.push(orderObj);
     localStorage.setItem("orders", JSON.stringify(orders));
 
+    // Generate QR code (data URL) that encodes order details (JSON)
+    let qrDataUrl = "";
+    try {
+      qrDataUrl = await QRCode.toDataURL(JSON.stringify(orderObj));
+    } catch (err) {
+      console.error("QR generation failed", err);
+    }
+
+    // Attempt to send email via EmailJS (client-side). Requires you to set env vars:
+    // VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, VITE_EMAILJS_USER_ID
+    // and create a template that accepts: to_name, to_email, order_id, order_total, order_items, qr_data_url
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const userId = import.meta.env.VITE_EMAILJS_USER_ID;
+
+    if (serviceId && templateId && userId) {
+      try {
+        const templateParams = {
+          to_name: formData.fullName,
+          to_email: formData.email,
+          order_id: newOrderId,
+          order_total: totalPrice.toFixed(2),
+          order_items: JSON.stringify(cartItems, null, 2),
+          qr_data_url: qrDataUrl,
+        };
+
+        await emailjs.send(serviceId, templateId, templateParams, userId);
+        console.log("Order email sent to", formData.email);
+      } catch (err) {
+        console.error("Failed to send order email", err);
+      }
+    } else {
+      console.warn("EmailJS not configured - skipping email send. Set VITE_EMAILJS_* env vars.");
+    }
+
     setOrderPlaced(true);
+    // keep QR / order details in state so the confirmation page can show it
+    setOrderId(newOrderId);
+    // stash the QR data in state by reusing localStorage (quick approach)
+    localStorage.setItem(`qr_${newOrderId}`, qrDataUrl);
+
     dispatch(clearCart());
 
-    // Redirect after 3 seconds
+    // Redirect after 8 seconds to allow user to copy/save QR
     setTimeout(() => {
       navigate("/home");
-    }, 3000);
+    }, 8000);
   };
 
   if (orderPlaced) {
+    // read qr data from localStorage (generated just now)
+    const qr = localStorage.getItem(`qr_${orderId}`) || "";
     return (
       <div className="container mt-5 text-center">
         <div className="alert alert-success" role="alert">
           <h2 className="fw-bold text-success">✅ Order Placed Successfully!</h2>
           <p className="fs-5 mt-3">Order ID: <strong>{orderId}</strong></p>
-          <p>Your order has been confirmed and will be delivered soon.</p>
-          <p className="text-muted">Redirecting to home...</p>
+          <p>Your order has been confirmed and will be delivered to <strong>{formData.fullName}</strong>.</p>
+          <p className="text-muted">A confirmation email (with QR code) has been sent to <strong>{formData.email}</strong> if configured.</p>
+          {qr ? (
+            <div className="mt-4">
+              <h5 className="mb-2">Scan this QR to view your order details</h5>
+              <img src={qr} alt="Order QR" style={{ width: 220, height: 220 }} />
+              <p className="small text-muted mt-2">You can save or share this QR code; scanning it will show order details and items.</p>
+            </div>
+          ) : null}
+          <p className="text-muted mt-3">Redirecting to home...</p>
         </div>
       </div>
     );
